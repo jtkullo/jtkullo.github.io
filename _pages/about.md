@@ -10,7 +10,46 @@ redirect_from:
 我是[东北大学](https://www.neu.edu.cn/)信息科学与工程学院23级的一名研究生，我的专业是控制科学与工程下的模式识别与智能系统方向。我的研究兴趣集中在**计算机视觉领域(CV)**和**自然语言处理领域(NLP)**，尤其对这两种**模态的融合**感兴趣并充满探索热情。目前跟随陈东岳教授在[东北大学机器感知与计算智能实验室](https://maplab.pages.dev/)进行研究。\
 **Email:** <1324134263@qq.com>\
 **CSDN:** [槿予](https://blog.csdn.net/qq_50267787?spm=1000.2115.3001.5343)
+# 专业技能
+- 熟悉CV和NLP领域相关先进算法；掌握Transformer原理，了解分布式计算方法、LLM和VLM模型模型框架和核心算法实现。
+- 有大模型应用与微调经验：RAG+教材问答，VLM+监控场景，VLM+推荐场景。
+- 已通过CET-4和CET-6；系统学习过数学、人工智能领域课程；熟练使用Python语言和Pytorch框架，会使用C++，Java，MatLab，SQL等主流语言；会使用爬虫、操作Linux系统；会组装计算机硬件系统。
+# 教育经历
+**东北大学** `985` `211` `双一流` 
+> 硕士研究生，控制科学与工程（模式识别与智能系统），信息科学与工程学院
+- 综合评价：5/167（前3%）
+- 荣誉奖项：优秀学生党员，优秀研究生干部，校研究生一等奖学金，**研究生国家奖学金**
 
-I am a graduate student in the School of Information Science and Engineering at [Northeastern University](https://www.neu.edu.cn/). My major is pattern recognition and intelligent systems under control science and engineering. My research interests focus on **Computer Vision(CV)** and **Natural Language Processing(NLP)**, and I am particularly interested in and passionate about the **fusion of these two modalities**. I am currently conducting research with Professor Chen Dongyue in the [Machine Perception and Computational Intelligence Laboratory of Northeastern University](https://maplab.pages.dev/).\
-**Email:** <1324134263@qq.com>\
-**CSDN:** [槿予](https://blog.csdn.net/qq_50267787?spm=1000.2115.3001.5343)
+**东北大学** `985` `211` `双一流`
+> 本科，自动化（人工智能），信息科学与工程学院
+- GPA：3.78/5.0
+- 排名：45/235（前20%）[**保研**]
+- 荣誉奖项：东北大学优秀团干部标兵，东北大学优秀学生干部，东北大学校奖学金，国家励志奖学金
+# 学术成果
+**1.《Memory Feature Two-Channel Model for Open-World Video Anomaly Detection》**\
+   **状态：** 在投《TOMM》（Q1）\
+   **内容：** 本文针对视频异常检测任务，提出了一种端到端模型 OW-MFTC。该模型采用双通道编码器结构，融合记忆网络与生成对抗网络，通过对重建误差图与高斯噪声图的对抗学习，提升重建网络的泛化能力。\
+**2.《Unsupervised Deepfake Face Video Detection Based on Representation Reconstruction》**\
+   **状态：** 在投《EAAI》（Q1）\
+   **内容：** 本文提出了一种专注于特定人物的个性化伪造人脸检测方法。基于GANomaly异常检测框架，设计了多尺度损失函数与结合像素误差和特征分布余弦相似度的综合异常评分策略，有效提升了检测精度。\
+**3.《TGHT-ViT: Text-Guided Heterogeneous Triple-Branch Visual Transformer for Single Domain Generalization of Deepfake Detection》**\
+   **状态：** 在投 ACM MM（CCF-A）\
+   **内容：** 本文针对深度伪造检测的单域泛化困难的问题，设计了语言模块引导的异构三分支视觉Transformer。通过可解释性的自然语言引导使得特征提取过程透明并具有强大的泛化能力。异构三分支Transformer通过多尺度特征一致性约束来迫使模型学得领域不变特征。检测结果由一个堆叠结构的集成分类器通过融合多尺度视觉特征和文本特征以给出。该模型探索并使用了多模态信息的互补与对齐。
+# 开源项目
+成为[DeepfakeBench](https://github.com/SCLBD/DeepfakeBench)项目中的Contributor。
+# 项目经历
+**1. 智慧课堂——基于RAG的教材问答助手(2024年09月 - 至今)**
+- **项目介绍：** 基于RAG框架开发的教材问答系统，完整搭建了一个高效且精准的检索增强问答解决方案。
+- **主要工作：**
+  - **数据集构建：** 使用LangChain动态分块处理多源文本数据，采用Data-Juicer工具链进行数据清洗，使用BM25选择强负类以增强对比学习，提升微调后的Embedding模型性能。 
+  - **模型微调：** 通过LoRA对Qwen2.5-7B大模型进行风格迁移，在不破坏其通用能力的情况下实现教师答疑风格；基于对比学习全参微调BAAI/bge模型，强化语义区分能力。
+  - **知识图谱构建：** 构建分层知识图谱（本体层、实体层、文档层），利用spaCy和Neo4j提取并存储课程知识点实体及关系，集成向量索引实现跨章节跨文档的知识点图谱化映射。
+  - **图增强检索优化：** 结合BAAI/bge语义向量检索与知识图谱关系链扩展，使用ColBERT交叉编码器进行检索重排序，提升检索和问答的精度与效果。\
+**2. 基于大模型的规则驱动型监控异常检测系统（2024年06月 - 至今）**
+- **项目介绍：** 在视频监控场景下，引入VLM的场景理解能力和LLM的推理能力，实现基于日志和规则的可解释高泛化的视频异常检测。
+- **主要工作：**
+  - **基于多模态提示词的高质量日志生成：** 基于Qwen2.5-VL模型，开发了一套泛化的交互式场景物体识别与标记系统，结合大模型自动检测与人工修正，构建了准确的场景多模态提示词，并设计了结构化的日志输出（人员、动作、事件）。
+  - **场景规则的生成与聚合：** 利用Qwen2.5模型，通过CoT思维链构建三级规则挖掘模型（行为分析→环境状态→规则建模），采用投票机制分析并聚合有效规则，去除低频与矛盾规则。
+  - **基于 RAG 的规则生成增强：** 使用RAG技术，引入行业特定工作规范数据，增强规则生成，适应特殊行业场景的需求。
+  - **日志描述的感知平滑：** 针对VLM模型在不同帧的描述不稳定，采用指数加权移动平均与多数投票方法进行时序平滑，提升日志的准确度与异常检测稳定性。
+  - **基于规则的异常检测框架：** 设计基于规则匹配与实体匹配的二次检测方法，显著提升异常检测的精度。
