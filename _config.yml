@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Jintao Zhang's Personal Homepage"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -25,9 +25,9 @@ author:
   avatar           : "ME1748420919593.png"
   name             : "张锦涛·Jintao Zhang"
   pronouns         : # example: "she/her"  
-  bio              : "您好，欢迎查看我的个人页面！"
-  location         : "北京"
-  employer         : "Red Brick University"
+  bio              : #"您好，欢迎查看我的个人页面！"
+  location         : "北京·Beijing"
+  employer         : "东北大学·Northeastern University"
   uri              : # URL
   email            : "1324134263@qq.com" 
 
@@ -51,7 +51,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
